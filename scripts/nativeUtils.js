@@ -29,8 +29,11 @@ function nativeTriggerHaptic(type) {
 function nativeOpenModalSheet(url) {
   if (nativeBrigdeInterface?.openModalSheet) {
     nativeBrigdeInterface.openModalSheet(url);
-  } else {
+  } else if (getIosBridge()) {
     postToIos('openModalSheet', { url });
+  } else {
+    // Plain browser (no native bridge): open the link in a new tab
+    window.open(url, '_blank', 'noopener');
   }
 }
 

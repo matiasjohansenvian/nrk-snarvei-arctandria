@@ -1,41 +1,227 @@
 {
   "journalist": {
-    "name": "Ola Nordmann",
-    "role": "Vaktsjef i Snarvei",
-    "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80"
+    "name": "Adrian Sollund",
+    "role": "Pilssjef Nordland",
+    "imageUrl": ""
   },
   "documents": [
     {
-      "documentId": "story-1",
+      "documentId": "snarvei-doc-1",
       "isRead": false,
-      "updatedAt": "2026-11-19T08:30:00Z",
+      "updatedAt": "2026-11-26T11:01:00.000Z",
       "storyCard": {
         "title": [
-          { "text": "Krise på Grünerløkka: ", "marks": ["em"] },
-          { "text": "Tomt for havremelk før klokken 09", "marks": [] }
+          {
+            "text": "NRK-designer siktet: ",
+            "marks": [
+              "em"
+            ]
+          },
+          {
+            "text": "Delte badevann med 380 fire- og femåringer",
+            "marks": []
+          }
         ],
-        "lead": "Kort ingress på 1–2 setninger.",
+        "lead": "PST har ransaket boligen til 30-åringen fra Ankenes. Fant 53 sekunder med vanlig voksenporno. - Trenger ikke mer, sier mistenkte.",
         "image": {
-          "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=80",
-          "credit": "Foto: Unsplash / NTB"
+          "imageUrl": "./images/image1.png",
+          "credit": "Foto: NRK"
         },
-        "bulletpoints": ["Kort kulepunkt 1", "Kort kulepunkt 2"]
+        "bulletpoints": []
       },
       "explanationCard": {
+        "title": "Her er saken",
         "bulletpoints": [
-          "Utdypende bakgrunnspunkt 1.",
-          "Utdypende bakgrunnspunkt 2.",
-          "Utdypende bakgrunnspunkt 3."
+          "Mistenkte viste pornosamlingen stolt fram for PST, ifølge forsvareren. - Han ber om å få sone varetekt med fotlenke og baderinger i Furuset bad.",
+          "“Neste gang skal jeg lese IT-instruksen” påpeker siktede.",
+          "Klorgass kan påvirke dømmekraft og potens mener ekspert."
+        ],
+        "plugs": []
+      }
+    },
+    {
+      "documentId": "snarvei-doc-2",
+      "isRead": false,
+      "updatedAt": "2026-11-26T11:02:00.000Z",
+      "storyCard": {
+        "title": [
+          {
+            "text": "Drikkepakke ",
+            "marks": [
+              "em"
+            ]
+          },
+          {
+            "text": "i regi av Adrian Sollund - Pilssjef Nordland.",
+            "marks": []
+          }
+        ],
+        "lead": "Til årets måltid skal tre ulike glass med drikke streife smaksløkene og flyte ned gjennom strupen.",
+        "image": {
+          "imageUrl": "./images/article-2.jpg",
+          "credit": "Foto: NRK"
+        },
+        "bulletpoints": []
+      },
+      "explanationCard": {
+        "title": "Her er menyen",
+        "bulletpoints": [
+          "Forrett: Et glass med en lett og fyldig skvett med vann fra Heggemovannet. Vannet skal være kaldt og skjærer gjennom syrligheten til granatepler.",
+          "Hovedrett: Denne gang skal vi over alpene og videre inn i Poseidons nordlige rike, nærmere bestemt: Heggemovannet. Dette romtempererte glasset passer ypperlig med kål.",
+          "Dessert: Kveldens orale punktum skal settes, og siste glass spandert av NRK skal serveres. Her har vi et vann som er bløtt og er derfor ikke tilsatt salt for avherding i oppvaskmaskiner og vaskemaskiner."
         ],
         "plugs": [
           {
-            "kicker": "BAKGRUNN",
-            "title": "Slik overlever du uten flat white",
-            "lead": "Ekspertene anbefaler vann fra springen i en overgangsfase.",
-            "url": "https://www.nrk.no",
-            "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+            "kicker": "Per Willys vann-mening",
+            "title": "Skuter i drikkevannet",
+            "lead": "",
+            "url": "https://www.nrk.no/nordland/skuter-i-drikkevannet-1.465592",
+            "imageUrl": ""
+          },
+          {
+            "kicker": "Per Willy hater Bodø-vannet",
+            "title": "Stygt vann i Bodø",
+            "lead": "",
+            "url": "https://www.nrk.no/nordland/stygt-vann-i-bodo-1.465821",
+            "imageUrl": ""
           }
         ]
+      }
+    },
+    {
+      "documentId": "snarvei-doc-4",
+      "isRead": false,
+      "updatedAt": "2026-11-26T11:03:00.000Z",
+      "storyCard": {
+        "title": [
+          {
+            "text": "Menyen til Arctandria ",
+            "marks": [
+              "em"
+            ]
+          },
+          {
+            "text": "er klar!",
+            "marks": []
+          }
+        ],
+        "lead": "Wood hotell tar oss på en reise gjennom nordens rike.",
+        "image": {
+          "imageUrl": "./images/image2.png",
+          "credit": "Foto: NRK"
+        },
+        "bulletpoints": []
+      },
+      "explanationCard": {
+        "bulletpoints": [],
+        "plugs": [
+          {
+            "kicker": "Forrett:",
+            "title": "Carpaccio",
+            "lead": "Steinsopp, løk, granateple, parmesan og ruccola\nAllergener: Melk Egg, Sulfitt",
+            "url": "",
+            "imageUrl": ""
+          },
+          {
+            "kicker": "Hovedrett",
+            "title": "Ungsau",
+            "lead": "Gresskar, småløk, kål og rødvinssaus\nAllergener: Melk, Sulfitt",
+            "url": "",
+            "imageUrl": ""
+          },
+          {
+            "kicker": "Dessert",
+            "title": "Blåbærterte",
+            "lead": "Pecan, sitron, mynte og marengs\nAllergener: Melk, Hvete, Egg, Pecan",
+            "url": "",
+            "imageUrl": ""
+          }
+        ]
+      }
+    },
+    {
+      "documentId": "snarvei-doc-3",
+      "isRead": false,
+      "updatedAt": "2026-11-26T11:04:00.000Z",
+      "storyCard": {
+        "title": [
+          {
+            "text": "The wood frister ",
+            "marks": [
+              "em"
+            ]
+          },
+          {
+            "text": "med enda en arctandriameny",
+            "marks": []
+          }
+        ],
+        "lead": "The Wood gir smaksløkene våre en skikkelig bamseklem ved å gi oss en alternativ meny.",
+        "image": {
+          "imageUrl": "./images/image3.jpg",
+          "credit": "Foto: Wood Hotel Bodø"
+        },
+        "bulletpoints": []
+      },
+      "explanationCard": {
+        "bulletpoints": [],
+        "plugs": [
+          {
+            "kicker": "Forrett:",
+            "title": "Isak dreyers friterte bjørnebaby-pote",
+            "lead": "Pels, klør, skyld\nAllergener: Sorg, bøter",
+            "url": "",
+            "imageUrl": "./images/image6.jpg"
+          },
+          {
+            "kicker": "Hovedrett",
+            "title": "Brynjars loaded bjørnepølse m. fotparmesan fra Ankenes",
+            "lead": "Fotsopp, brioche\nAllergener: Tokens, svindel",
+            "url": "",
+            "imageUrl": "./images/image4.jpg"
+          },
+          {
+            "kicker": "Dessert",
+            "title": "Ku-kvarg med Brynjars Bjørnebær fra Beiarn",
+            "lead": "Bjørne, bær\nAllergener: Kuk-varg, bær, bjørn, smegma",
+            "url": "",
+            "imageUrl": "./images/image5.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "documentId": "snarvei-doc-5",
+      "isRead": false,
+      "updatedAt": "2026-11-26T11:05:00.000Z",
+      "storyCard": {
+        "title": [
+          {
+            "text": "PMS-sjokk: ",
+            "marks": [
+              "em"
+            ]
+          },
+          {
+            "text": "Forsvant fra feel24 etter GTA-lansering",
+            "marks": []
+          }
+        ],
+        "lead": "14-åringen Per-Magnum skal ha blitt ekspert på å spille GTA bare med venstrehånda. Styrken i høyre vokste i rekordfart. Ekspert hyller grepet.",
+        "image": {
+          "imageUrl": "./images/image7.jpg",
+          "credit": "Foto: Privat"
+        },
+        "bulletpoints": []
+      },
+      "explanationCard": {
+        "title": "Her er saken",
+        "bulletpoints": [
+          "Våre kvinnelige kunder har forsvunnet etter Per-Magne dro fra Feel24 melder daglig leder til NRK.",
+          "Til tross for dette rapporterer han om økt muskelvekst i høyre håndledd og biceps. Ronny Skoglund, kjent som Feminin Fysikk, hyller grepet, men minner om at dette ikke burde gjennomføres av vanlige folk.",
+          "Per-Magnes kjæreste fortviler over situasjonen og melder om alvorlig sjalusi."
+        ],
+        "plugs": []
       }
     }
   ]

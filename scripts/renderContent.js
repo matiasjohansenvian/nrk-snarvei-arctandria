@@ -42,8 +42,10 @@ export function renderContent(data, track) {
     story.dataset.documentId = documentId;
     story.dataset.isRead = doc.isRead;
 
-    story.querySelector('.storycard-background-image').style.backgroundImage =
-      `url('${storyCard.image?.imageUrl}')`;
+    if (storyCard.image?.imageUrl) {
+      story.querySelector('.storycard-background-image').style.backgroundImage =
+        `url('${storyCard.image.imageUrl}')`;
+    }
 
     const creditEl = story.querySelector('.storycard-photo-credit');
     if (storyCard.image?.credit) {
@@ -80,6 +82,11 @@ export function renderContent(data, track) {
       observeSummaryScroll(story, explanationCardSection);
     }
 
+    const explanationTitleEl = story.querySelector('.explanationcard-title');
+    if (explanationTitleEl && explanationCard.title) {
+      explanationTitleEl.textContent = explanationCard.title;
+    }
+
     story.querySelector('.explanationcard-bulletpoints').innerHTML = explanationCard.bulletpoints
       .map(
         (bp) =>
@@ -93,7 +100,19 @@ export function renderContent(data, track) {
       const container = plugEl.querySelector('.explanationcard-plug-container');
 
       container.dataset.url = plug.url;
-      plugEl.querySelector('.explanationcard-plug-img').src = plug.imageUrl;
+      if (plug.url) {
+        container.setAttribute('role', 'link');
+        container.tabIndex = 0;
+      } else {
+        container.style.cursor = 'default';
+      }
+
+      const imageWrapper = plugEl.querySelector('.explanationcard-plug-image');
+      if (plug.imageUrl) {
+        plugEl.querySelector('.explanationcard-plug-img').src = plug.imageUrl;
+      } else {
+        imageWrapper.remove();
+      }
       plugEl.querySelector('.explanationcard-plug-title').textContent = plug.title;
       plugEl.querySelector('.explanationcard-plug-lead').textContent = plug.lead || '';
       plugEl.querySelector('.explanationcard-plug-kicker').textContent = plug.kicker || '';
@@ -103,7 +122,7 @@ export function renderContent(data, track) {
 
     const plugContainers = story.querySelectorAll('.explanationcard-plug-container');
     plugContainers.forEach((container) => {
-      container.addEventListener('click', () => {
+      const openPlug = () => {
         const url = container.getAttribute('data-url');
         if (url) {
           nativeLogStructuredEvent(
@@ -113,6 +132,10 @@ export function renderContent(data, track) {
           );
           nativeOpenModalSheet(url);
         }
+      };
+      container.addEventListener('click', openPlug);
+      container.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') openPlug();
       });
     });
 
