@@ -87,12 +87,17 @@ export function renderContent(data, track) {
       explanationTitleEl.textContent = explanationCard.title;
     }
 
-    story.querySelector('.explanationcard-bulletpoints').innerHTML = explanationCard.bulletpoints
-      .map(
-        (bp) =>
-          `<li role="presentation"><p class="explanationcard-bulletpoint-text">${bp}</p></li>`,
-      )
-      .join('');
+    if (explanationCard.bulletpoints?.length) {
+      story.querySelector('.explanationcard-bulletpoints').innerHTML = explanationCard.bulletpoints
+        .map(
+          (bp) =>
+            `<li role="presentation"><p class="explanationcard-bulletpoint-text">${bp}</p></li>`,
+        )
+        .join('');
+    } else {
+      // No summary text: drop the whole "Her er saken" section (heading and list)
+      story.querySelector('.explanationcard-wrapper')?.remove();
+    }
 
     const plugsSection = story.querySelector('.explanationcard-plugs-section');
     explanationCard.plugs.forEach((plug) => {
